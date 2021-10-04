@@ -22,7 +22,7 @@ function PhoneConfirmation() {
            <span>Terms of service and privacy policy.</span>
            Thanks!
            </p>
-            <Link exact to="/code_confirm" className="primaryBtn d-flex align-items-center">
+            <Link exact to="/code_confirm" className="primaryBtn d-flex align-items-center ">
                 Next <img src="/images/nextArrowIcon.svg" className="ml-1" alt="" />
             </Link>
         </div>

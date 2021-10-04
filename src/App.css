@@ -32,4 +32,9 @@ a {
     font-style: normal;
     text-align: center;
     text-decoration: none;
+    width: max-content;
+   
+}
+a:hover {
+    text-decoration: none !important;
 }

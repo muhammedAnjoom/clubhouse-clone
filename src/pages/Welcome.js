@@ -27,7 +27,7 @@ function Welcome() {
                  Get your username {" "}
                  
                 </Link>
-                <Link>
+                <Link exact to="/invite">
                     Have an invite text? Sign in
                 </Link>
             </div>
