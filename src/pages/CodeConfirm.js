@@ -24,9 +24,11 @@ function CodeConfirm() {
                 <p>
                     Didn't receive it? <span>Tap to resend.</span>
                 </p>
+                <div style={{display:'flex', justifyContent:'center', paddingTop:'20px'}}>
                 <Link exact to="/allow_notification" className="primaryBtn d-flex text-center" >
                 Next <img src="/images/nextArrowIcon.svg" alt="" className="ml-1" />
                 </Link>
+                </div>
             </div>
         </div>
     )

@@ -24,7 +24,7 @@
     max-width: 320px;
     justify-content: space-evenly;
     text-align: center;
-
+    padding-top: 10px;
 }
 .PhoneConfirmContanier p span {
     font-weight: bold;
@@ -36,4 +36,45 @@
 }
 .backBtn img{
     width: 20px;
+}
+.notficationContainer {
+    border-radius: 1em;
+    background-color: #ffff;
+    box-shadow: 0px 0px 6px #cccc;
+}
+.notficationContainer h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #000;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.notficationContainer p {
+    font-size: .900em;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: auto;
+}
+.notficationContainer .action_btn {
+    position: relative;
+}
+.notficationContainer .action_btn a{
+    display: inline-block;
+    width: 50%;
+    text-decoration: none; 
+    padding: 0.5em;
+    border-top: 1px solid #cccc ;
+    color: var(--btnBgColor);
+}
+
+.notficationContainer .action_btn>a:first-child {
+    border-right: 1px solid #cccc;
+    
+}
+.notficationContainer .hand_icon {
+    position: absolute;
+    bottom: -84px;
+    right: 67px;
+    width: 80px;
 }
