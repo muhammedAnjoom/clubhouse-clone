@@ -1,14 +1,22 @@
-import React from 'react'
-import style from "../style/dailyInfoCard.module.css"
-import data from '../data/dailyCard.json'
+import React from "react";
+import style from "../style/dailyInfoCard.module.css";
+import data from "../data/dailyCard.json";
 
 function DaliyInfoCard() {
-    console.log(data);
-    return (
+  console.log(data[0].title);
+  return (
+    <div className={style.dailyCard}>
+      {data.map((item) => (
         <div>
-            <h1>i'm the daily card</h1>
+            <span className="">{item.time}</span>
+            <div>
+                <span>{item.title}</span>
+                <p>{item.description}</p>
+            </div>
         </div>
-    )
+      ))}
+    </div>
+  );
 }
 
-export default DaliyInfoCard
+export default DaliyInfoCard;
