@@ -3,6 +3,7 @@ import style from "../style/roomCard.module.css";
 import data from "../data/roomCard.json";
 import {BsChatDots, BsChatDotsFill, BsFilePersonFill} from 'react-icons/bs'
 
+
 function RoominfoCard() {
   
   return (
