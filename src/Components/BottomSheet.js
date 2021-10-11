@@ -2,6 +2,7 @@ import React from "react";
 import SwipeableBottomSheet from "react-swipeable-bottom-sheet";
 import style from "../style/bottomSheet.module.css";
 import StartRoom from "./bottom_sheets/StartRoom";
+import NewRoom from "./bottom_sheets/NewRoom";
 
 function BottomSheet(props) {
   return (
@@ -18,15 +19,26 @@ function BottomSheet(props) {
         style={{
           backgroundColor: props.sheetTitle == "profile" ? "transparent" : "",
         }}
-
       >
-        <StartRoom
-        setSheetVisible={props.setSheetCreateRoom}
-        setSheetVisible={(items)=>{
-          props.setSheetVisible(items)
-          props.setItemsVisible(true)
-        }}
-        />
+        {props.sheetTitle == "new room" ? (
+          <NewRoom
+            cardDetail={props.cardDetail}
+            setSheetVisible={(items) => {
+              props.setSheetVisible(items);
+              props.setItemsVisible(true);
+            }}
+          />
+        ) : props.sheetTitle == "start room" ? (
+          <StartRoom
+            setSheetCreateRoom={props.setSheetCreateRoom}
+            setSheetVisible={(items) => {
+              props.setSheetVisible(items);
+              props.setItemsVisible(true);
+            }}
+          />
+        ) : (
+          ""
+        )}
       </div>
     </SwipeableBottomSheet>
   );
