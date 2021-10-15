@@ -17,6 +17,7 @@
 }
 .head .profile_img {
   width: 25px;
+  height: 25px;
   border-radius: 0.8em;
   margin-left: 1.2em;
 }
@@ -35,7 +36,8 @@
   overflow: auto;
 }
 .roomDetailcard img {
-  width: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 1.7em;
 }
 .roomDetailcard h6 {
@@ -122,16 +124,13 @@
   align-items: center;
   justify-content: center;
 }
-.foote >div > button:first-child {
+.foote > div > button:first-child {
   font-size: 1.5em;
   margin-right: 0.5em;
 }
-.foote >div > button:nth-child(2) {
-  
+.foote > div > button:nth-child(2) {
   margin-right: 0.5em;
 }
-.foote >div > button:nth-child(3) {
-  
+.foote > div > button:nth-child(3) {
   margin-right: 0.5em;
 }
-

@@ -7,6 +7,7 @@ import CodeConfirm from "./pages/CodeConfirm";
 import AllowNotfication from "./pages/AllowNotfication";
 import AppLayout from "./pages/Layout/AppLayout";
 import Home from "./pages/Home";
+import Explore from './pages/Explore'
 //plan layout
 function App() {
   return (
@@ -34,10 +35,11 @@ function App() {
           </Switch>
         </PlanLayout>
       </Route>
-      <Route exact path={["/home"]}>
+      <Route exact path={["/home", "/explore"]}>
         <AppLayout>
           <Switch>
             <Route exact path='/home' component={() => <Home/>}/>
+            <Route exact path='/explore' component={Explore}/>
           </Switch>
         </AppLayout>
       </Route>
