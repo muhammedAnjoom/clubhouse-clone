@@ -37,6 +37,7 @@
   margin: 0 -0.5em;
   padding: 0.5em 0.5em 1.5em 0.5em;
   position: relative;
+  border-radius: 10px;
 }
 .peopleContainer > div {
   display: flex;
@@ -106,19 +107,20 @@
   padding: 0.5em;
 }
 .head{
-  position: absolute;
+  padding: 0.5em 0.5em;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0.5em;
 }
 .head img{
   width: 15px;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
 }
-.divhead {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
-.divhead h3{
+.head h3 {
+  margin: 0;
+  font-size: 1.2em;
   color: var(--textColor);
-  font-size: 20px;
-  
 }

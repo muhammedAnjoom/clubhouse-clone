@@ -20,6 +20,7 @@ function Explore() {
         }}
         size="large"
         placeholder="Find People and clubs"
+        style={{borderRadius:"10px",boxShadow:"0px 2px 3px #cccccc"}}
         prefix={<img src='/images/search.png' width="15px"/>} ></Input>
       </div>
       <h6>PEOPLE TO FOLLOW</h6>
